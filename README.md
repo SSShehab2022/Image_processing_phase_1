@@ -17,7 +17,7 @@ cv2.HoughLinesP(edges, 1, np.pi/180, 50): which transforms the image to hough sp
   Steps:-
 
 After using camera calibration algorithm by executing the camera_calibration.py to compute the camera calibration matrix and distortion coefficients camera_calib.p.
-Apply undistortion algorithm according to the coefficients we got in camera_calibration step by using open_cv cv2.undistort(img,mtx,dist,None,mtx) to remove the effect of lens distortion ,for ex:
+Apply undistortion algorithm according to the coefficients we got in camera_calibration step by using open_cv cv2.undistort(img,mtx,dist,None,mtx) to remove the effect of lens distortion .
           
  
    iii. Detecting edges using color transforms, gradients and other methods, one of the important methods is sobel filter which gets the image gradient in x and y....First, define sobal filter function to take the input image and the range of pixels (def abs_sobel_thresh(img, orient='x', thresh_min=0, thresh_max=255)) applying the derivative(gradient) in x and y(cv2.Sobel(gray, cv2.CV_64F, 1, 0, ksize=sobel_kernel) & cv2.Sobel(gray, cv2.CV_64F, 0, 1, ksize=sobel_kernel)) axis then apply proper thershold and color thershold, then transform to the binary image 8_bit.
