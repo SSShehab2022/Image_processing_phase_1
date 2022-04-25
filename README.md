@@ -3,7 +3,6 @@ First stage, we wanted to apply hough transform which we studied using opencv_py
   A) 1st script is Line_detection.ipynb which take  lines.jpg as input image ,transform it to gray scale to be easy to be processed then applying hough transform to the hough space to detect line.
      
  
-
   B)  2nd script is line_detection_video.ipynb which takes road_car_view.mp4 frames to be process with hough transform then the output video is displayed when the script is executed only..
      
 
@@ -14,7 +13,7 @@ cv2.HoughLinesP(edges, 1, np.pi/180, 50): which transforms the image to hough sp
    
 
 
-2. Second stage, we use Laning_Script.ipynb to detect lane pixels and fit to find the lane boundery and to determine the curvature of the lane and vehicle position with respect to center.
+2. Second stage, we use Laning_Script.ipynb  to detect lane pixels and fit to find the lane boundery and to determine the curvature of the lane and vehicle position with respect to center.
   Steps:-
 
 After using camera calibration algorithm by executing the camera_calibration.py to compute the camera calibration matrix and distortion coefficients camera_calib.p.
