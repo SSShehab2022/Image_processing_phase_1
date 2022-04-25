@@ -30,11 +30,18 @@ Apply undistortion algorithm according to the coefficients we got in camera_cali
       
  
     iiv. Calculate the redius of curvature using the equation besed on https://www.intmath.com/applications-differentiation/8-radius-curvature.php :
+    
       curve_radius = ((1 + (2*fit[0]*y_0*y_meters_per_pixel + fit[1])**2)**1.5) / np.absolute(2*fit[0])
       
       The position of the vehicle with respect to the center of the lane is calculated with the following:
+      
+      
       lane_center_position = (r_fit_x_int + l_fit_x_int) /2
       center_dist = (car_position - lane_center_position) * x_meters_per_pix
+      
+      
+      
+      
     vv. Displaying the result images and video in output_images for each step and output_videos .
 
 
