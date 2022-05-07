@@ -1,5 +1,5 @@
 # ImageProcessing_PhaseOne
-## First stage
+## First script of stage one(extra)
  we wanted to apply hough transform which we studied using opencv_python.
  1. 1st script is **Line_detection.ipynb** which take  **lines.jpg** as input image ,transform it to gray scale to be easy to be processed then **applying hough transform** to the     hough space to detect line.
  2. 2nd script is **line_detection_video.ipynb** which takes **road_car_view.mp4 frames**(for example) to be process with hough transform then the output video is displayed when the script is executed only..
@@ -11,7 +11,7 @@
      
    
 
-## Second stage
+## second script of stage one(main)
 we use **Laning_Script.ipynb**  to detect lane pixels and fit to find the lane boundery and to determine the curvature of the lane and vehicle position with respect to center.
 
 
